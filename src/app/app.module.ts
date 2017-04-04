@@ -10,6 +10,7 @@ import { StartPageComponent } from './start-page/start-page.component';
 import { StayInHouseComponent } from './stay-in-house/stay-in-house.component';
 import { StealSlippersComponent } from './steal-slippers/steal-slippers.component';
 import { TalkToGlendaComponent } from './talk-to-glenda/talk-to-glenda.component';
+import { DisplayPointsComponent } from './display-points/display-points.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TalkToGlendaComponent } from './talk-to-glenda/talk-to-glenda.component
     StartPageComponent,
     StayInHouseComponent,
     StealSlippersComponent,
-    TalkToGlendaComponent
+    TalkToGlendaComponent,
+    DisplayPointsComponent
   ],
   imports: [
     BrowserModule,

@@ -9,12 +9,16 @@ export class UserService {
 
   constructor() { }
 
-  getUser() {
-    return USERS[0];
+  returnFakeUser(){
+    return new User("testName", "test", "test");
   }
 
-  addUser(User) {
-    masterUserList.push(User);
+  getUser() {
+    return masterUserList[0];
+  }
+
+  addUser(newUser) {
+    masterUserList.push(newUser);
   }
 
 }
