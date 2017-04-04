@@ -1,3 +1,29 @@
-<p>
-  welcome works!
-</p>
+<div class="newUser">
+<h1>Create Your Character</h1>
+</div>
+<div class="form-group">
+<label> Enter name: </label>
+<input class="form-input"#newName>
+</div>
+<div class="form-group">
+<label> Choose character: </label>
+<select class="form-input" #newCharacter>
+  <option value="lion">Lion</option>
+  <option value="scarecrow">Scarecrow</option>
+  <option value="flying-monkey">Flying Monkey</option>
+  <option value="girl">Girl</option>
+  <option value="witch">Witch</option>
+</select>
+</div>
+<div class="form-group">
+<label> Choose favorite color: </label>
+<select class="form-input" #newColor>
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="pink">Pink</option>
+  <option value="turquoise">Turquoise</option>
+  <option value="yellow">Yellow</option>
+  <option value="green">Green</option>
+</select>
+<button class="btn-lg"(click)="submitForm(newName.value, newCharacter.value, newColor.value); newName.value=''; newCharacter.value=''; newColor.value='';">Add</button>
+</div>

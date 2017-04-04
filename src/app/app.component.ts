@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from './user.model'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Welcome to Dorothy\'s Life';
+  user: User;
+
+  addNewUser(newUser) {
+    this.user = newUser;
+  }
 }
