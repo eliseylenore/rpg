@@ -15,4 +15,13 @@ import { Location } from '@angular/common';
 export class StartPageComponent{
   constructor(private router: Router, private userService: UserService) { }
   user: User = this.userService.getUser();
+
+  morePoint() {
+    this.userService.addPoint();
+    console.log(this.user.points);
+  }
+
+  lessPoint() {
+    this.userService.subtractPoint();
+  }
 }

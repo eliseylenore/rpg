@@ -1,3 +1,4 @@
+
 <app-display-points></app-display-points>
 
 <h1>...CRASH!</h1>
@@ -6,7 +7,7 @@
   {{user.name}}, your house just crashed in a new land. You open the door to see the whole world in color. With Todo by your side, you set off on your adventure...
 </p>
 
-<p class="choice" routerLink="/stayin">
+<p class="choice" routerLink="/stayin" (click)="lessPoint()">
   Stay in the house
 </p>
 
@@ -14,6 +15,6 @@
   Steal an old lady's ruby slippers
 </p>
 
-<p class="choice" routerLink="/talktoglenda">
+<p class="choice" routerLink="/talktoglenda" (click)="morePoint()">
   Talk to Glenda, the neighborhood good witch of the East.
 </p>

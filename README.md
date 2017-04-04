@@ -26,3 +26,13 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyDR4Z_wTXtV0WS7MMZU0doVqTYy8KkGs-k",
+  authDomain: "wizard-of-oz-b22b2.firebaseapp.com",
+  databaseURL: "https://wizard-of-oz-b22b2.firebaseio.com",
+  projectId: "wizard-of-oz-b22b2",
+  storageBucket: "wizard-of-oz-b22b2.appspot.com",
+  messagingSenderId: "863224678619"
+};

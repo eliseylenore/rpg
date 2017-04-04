@@ -2,6 +2,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 import { User } from '../user.model';
 import { UserService } from '../user.service';
 import { Router } from '@angular/router';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-welcome',

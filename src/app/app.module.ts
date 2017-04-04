@@ -12,6 +12,13 @@ import { StealSlippersComponent } from './steal-slippers/steal-slippers.componen
 import { TalkToGlendaComponent } from './talk-to-glenda/talk-to-glenda.component';
 import { DisplayPointsComponent } from './display-points/display-points.component';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+}
+
 @NgModule({
   declarations: [
     AppComponent,

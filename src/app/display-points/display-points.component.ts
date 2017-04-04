@@ -12,6 +12,7 @@ import { Location } from '@angular/common';
   providers: [UserService]
 })
 export class DisplayPointsComponent{
+  title="Wizard of Oz Adventure";
   constructor(private router: Router, private userService: UserService) { }
   user: User = this.userService.getUser();
 }
