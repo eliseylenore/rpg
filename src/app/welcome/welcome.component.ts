@@ -1,19 +1,22 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { User } from '../user.model';
+import { UserService } from '../user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.css']
+  styleUrls: ['./welcome.component.css'],
+  providers: [UserService]
 })
+
 export class WelcomeComponent {
   @Output() newUserSender = new EventEmitter();
 
-  constructor() { }
+  constructor(private router: Router, private userService: UserService) { }
 
   submitForm(newName: string, newCharacter: string, newColor: string) {
     var newUser: User = new User(newName, newCharacter, newColor);
-    this.newUserSender.emit(newUser);
-
+    this.userService.addUser(newUser);
   }
 }
